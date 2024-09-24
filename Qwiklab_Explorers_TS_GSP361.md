@@ -198,6 +198,7 @@ explore: events {
     relationship: many_to_one
   }
 }
+
 ```
 6. Again Copy and paste the follwing in `training_ecommerce` model.
 
@@ -213,7 +214,7 @@ include: "/**/*.dashboard"
 
 datagroup: order_items_challenge_datagroup {
   sql_trigger: SELECT MAX(order_item_id) from order_items ;;
-  max_cache_age: "NUM hours"
+  max_cache_age: " hours"
 }
 
 
@@ -284,6 +285,7 @@ explore: events {
     relationship: many_to_one
   }
 }
+
 ```
 
 
